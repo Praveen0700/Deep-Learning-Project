@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+banana_tree.sqlite3
+prediction_results.csv
+uploads/*
+!uploads/.gitkeep
+file.jpe
+
+/fusarium_wilt/
+/healthy/
+/natural_death_leaf/
+/rhizome_root/

@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d2b">
+  <title>Banana Tree | Field notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="ambient"><canvas id="particles"></canvas></div>
+{% include "login.html" %}
+<div class="app-shell" id="appShell">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">b</span><span>banana tree</span></div>
+    <div class="side-label">Field journal</div>
+    <nav class="nav" aria-label="Main navigation">
+      <button class="active" data-view="overview"><span class="nav-icon">⌂</span>Overview</button>
+      <button data-view="diagnose"><span class="nav-icon">⊕</span>Image test</button>
+      <button data-view="history"><span class="nav-icon">◷</span>My storage</button>
+      <button data-view="dataset"><span class="nav-icon">▦</span>Image library</button>
+      <button data-view="analytics"><span class="nav-icon">▥</span>Analytics</button>
+    </nav>
+    <div class="side-bottom">
+      <div class="model-pill"><strong><i class="model-dot"></i><span id="modelStatus">Local model</span></strong><p id="modelDetail">Four dataset classes, analyzed on this computer.</p></div>
+      <div class="profile"><div class="avatar" id="avatar">B</div><div class="profile-copy"><strong id="profileName">Grower</strong><span>Personal field journal</span></div><button class="logout" id="logoutBtn" title="Sign out" aria-label="Sign out">↗</button></div>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="crumb" id="breadcrumb">FIELD JOURNAL / OVERVIEW</div><div class="top-right"><span class="live-indicator"><i></i>Local workspace</span><span id="clock"></span></div></header>
+    <div class="content">
+      {% include "dashboard.html" %}
+      {% include "storage.html" %}
+    </div>
+  </main>
+</div>
+<div class="notice" id="notice" role="status"></div>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

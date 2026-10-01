@@ -1,0 +1,81 @@
+{
+  "model": "LinearSVC",
+  "classes": [
+    "fusarium_wilt",
+    "healthy",
+    "natural_death_leaf",
+    "rhizome_root"
+  ],
+  "training_samples": 192,
+  "validation_samples": 48,
+  "accuracy_pct": 100.0,
+  "precision_pct": 100.0,
+  "recall_pct": 100.0,
+  "specificity_pct": 100.0,
+  "f1_pct": 100.0,
+  "r2": null,
+  "r2_note": "Not applicable: R-squared is a regression metric; this model predicts classes.",
+  "confidence_threshold_pct": 70.3,
+  "accepted_accuracy_pct": 100.0,
+  "accepted_samples": 48,
+  "per_class": [
+    {
+      "name": "fusarium_wilt",
+      "support": 12,
+      "precision_pct": 100.0,
+      "recall_pct": 100.0,
+      "specificity_pct": 100.0,
+      "f1_pct": 100.0
+    },
+    {
+      "name": "healthy",
+      "support": 12,
+      "precision_pct": 100.0,
+      "recall_pct": 100.0,
+      "specificity_pct": 100.0,
+      "f1_pct": 100.0
+    },
+    {
+      "name": "natural_death_leaf",
+      "support": 12,
+      "precision_pct": 100.0,
+      "recall_pct": 100.0,
+      "specificity_pct": 100.0,
+      "f1_pct": 100.0
+    },
+    {
+      "name": "rhizome_root",
+      "support": 12,
+      "precision_pct": 100.0,
+      "recall_pct": 100.0,
+      "specificity_pct": 100.0,
+      "f1_pct": 100.0
+    }
+  ],
+  "confusion_matrix": [
+    [
+      12,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      12,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      12,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      12
+    ]
+  ]
+}

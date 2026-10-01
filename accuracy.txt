@@ -1,0 +1,26 @@
+Banana leaf classifier validation report
+Model: LinearSVC
+Original images per class: 60
+Training images: 192
+Validation images: 48
+Overall validation accuracy: 100.0%
+Macro precision: 100.0%
+Macro recall / sensitivity: 100.0%
+Macro specificity: 100.0%
+Macro F1 score: 100.0%
+R2: N/A (R-squared is for regression, not classification)
+Target accepted accuracy: 90.0%
+Confidence threshold: 70.3%
+Accepted validation accuracy: 100.0%
+Accepted validation coverage: 48/48
+Confusion matrix (actual rows, predicted columns; order: fusarium_wilt, healthy, natural_death_leaf, rhizome_root):
+  fusarium_wilt healthy natural_death_leaf rhizome_root
+  fusarium_wilt: 12 0 0 0
+  healthy: 0 12 0 0
+  natural_death_leaf: 0 0 12 0
+  rhizome_root: 0 0 0 12
+Per-class validation accuracy:
+  fusarium_wilt: 100.0% (12/12)
+  healthy: 100.0% (12/12)
+  natural_death_leaf: 100.0% (12/12)
+  rhizome_root: 100.0% (12/12)
